@@ -19,7 +19,7 @@
 """
 
 
-def t(num):
+def get_number_divisors(num):
     if num == 1:
         return 1
     c = 2
@@ -34,7 +34,7 @@ def t(num):
 n = 1
 while True:
     r = int((1 + n) / 2 * n)
-    if t(r) > 500:
+    if get_number_divisors(r) > 500:
         print(r)
         break
     n += 1
